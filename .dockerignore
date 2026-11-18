@@ -1,8 +1,0 @@
-target/
-.idea/
-.vscode/
-*.iml
-*.class
-.git/
-docs/
-README.md
