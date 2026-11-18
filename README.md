@@ -1,5 +1,9 @@
 # Student Peer-to-Peer Book Exchange System (BookSwap)
 
+> 🚀 **Live Demo:** [https://book-exchange-production.up.railway.app](https://book-exchange-production.up.railway.app)
+>
+> 🔑 **Demo Credentials:** Login with any sample student email (e.g., `aarav.sharma@chitkara.edu.in`) and password `Password@123`.
+
 Programming in Java (25CSE0202), Chitkara University. A web application where students list academic books, search for books other students have listed, and exchange them through a request, accept or reject, and completion workflow. There are no payments.
 
 **Stack:** HTML5, CSS3, a little JavaScript, Core Java, Java Servlets, JDBC, MySQL 8, Apache Tomcat 9, Maven. No Spring, Hibernate, Node or React.
@@ -44,7 +48,7 @@ book-exchange/
     |   +-- dao/       BaseDao, StudentDAO, BookDAO, ExchangeRequestDAO, ExchangeHistoryDAO
     |   +-- service/   StudentService, BookService, ExchangeService
     |   +-- servlet/   Register, Login, Logout, Dashboard, Book, SearchBook, ExchangeRequest, Profile, History
-    |   +-- filter/    AuthenticationFilter, EncodingFilter
+    |   +-- filter/    AuthenticationFilter, EncodingFilte
     |   +-- exception/ AppException + 4 subclasses
     |   +-- util/      ValidationUtil, PasswordUtil, Tx, SessionUtil, HtmlUtil
     +-- resources/db.properties
@@ -52,7 +56,7 @@ book-exchange/
 ```
 
 ## 5. Requirements
-* JDK 17 or newer
+* JDK 17 or newe
 * Maven 3.8+
 * MySQL 8.0.16+ (the schema uses a CHECK constraint)
 * **Apache Tomcat 9.x**. Use 9, not 10 or 11: Tomcat 10+ switched to the `jakarta.*` packages and this project uses `javax.servlet`.
@@ -79,7 +83,7 @@ Recommended: keep the password out of the source code.
 
 ## 7. Build and run
 ```bash
-mvn clean package            # produces target/book-exchange.war
+mvn clean package            # produces target/book-exchange.wa
 ```
 **Plain Tomcat:** copy `target/book-exchange.war` to `TOMCAT_HOME/webapps/`, run `bin/startup.bat` (or `startup.sh`), open **http://localhost:8080/book-exchange/**.
 

@@ -13,7 +13,7 @@ FROM tomcat:9.0-jdk17-temurin-jammy
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy the WAR as ROOT.war so the app is served at /
-COPY --from=build /app/target/book-exchange.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build /app/target/book-exchange.war /usr/local/tomcat/webapps/ROOT.wa
 
 EXPOSE 8080
 
