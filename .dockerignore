@@ -6,4 +6,3 @@ target/
 .git/
 docs/
 README.md
-.dockerignore
